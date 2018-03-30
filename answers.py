@@ -1,7 +1,10 @@
-from itertools import permutations
-answers = ['Answer1','Answer2','Answer3','Answer4','Answer5']
-counter = 0
-for x in permutations(answers):
-    print(list(x))
-    counter += 1
-print ("Number of ways: " + str(counter))
+import itertools
+
+lst = [1, 2, 3, 4]
+combs = []
+
+for i in xrange(1, len(lst)+1):
+    els = [list(x) for x in itertools.combinations(lst, i)]
+    combs.extend(els)
+
+print combs

@@ -9,4 +9,4 @@ git clone git@github.com:Rishats/variants-of-answers.git
 python answers.py
 ```
 ## Configure
-Open answers.py and write your answers in to variable answers.
+Open answers.py and write your answers in to variable lst.
